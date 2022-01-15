@@ -1,0 +1,373 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header,
+section {
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+
+/* --------header section style --------*/
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.flexible {
+    display: flex;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-bar li {
+    padding: 30px;
+    list-style: none;
+    float: left;
+}
+
+li a {
+    text-decoration: none;
+    color: #3a3a3a;
+    font-size: 16px;
+}
+
+
+/*-------- influencer journey------- */
+
+.influencer-journey {
+    display: flex;
+}
+
+.influencer-details h1 {
+    font-size: 52px;
+    margin-bottom: 0;
+}
+
+.influencer-details p {
+    padding-bottom: 20px;
+}
+
+.button {
+    color: white;
+    background-color: #e02c6d;
+    padding: 8px 25px;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.button:hover {
+    background-color: black;
+    color: yellow;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.half-width img {
+    width: 70%;
+    float: right;
+}
+
+.camera:hover {
+    transform: scale(0.9);
+    transition: transform 0.5s ease-in;
+}
+
+
+/*-------- popular collections--------- */
+
+.collection {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.collection-title {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.gallary {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 60px;
+}
+
+.photo-frame {
+    background-color: white;
+    width: 320px;
+    box-shadow: 5px 5px 10px lightgray;
+    overflow: hidden;
+}
+
+.photo-frame:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: transform 1s ease-in-out;
+}
+
+.photo img {
+    width: 300px;
+    padding: 10px;
+}
+
+.photo-details {
+    padding: 10px;
+}
+
+.products-title,
+.price {
+    margin: 0;
+}
+
+.products-title {
+    font-size: 28px;
+}
+
+.price {
+    font-size: 24px;
+}
+
+.fa-star {
+    color: orange;
+}
+
+.fa-star-half-alt {
+    color: orange;
+}
+
+.rating,
+.pro-info {
+    font-size: 14px;
+}
+
+span {
+    padding-left: 5px;
+}
+
+.pro-info {
+    color: #787885;
+}
+
+.see-more {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.see-more a {
+    float: right;
+    color: #e02c6d;
+    font-size: 16px;
+}
+
+
+/*------------ exchnge offer ---------*/
+
+.exchange-offer h1 {
+    text-align: center;
+}
+
+.exchange-offer p {
+    text-align: center;
+}
+
+.service-produce {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services {
+    width: 30%;
+}
+
+.service-icon i {
+    font-size: 120px;
+    text-align: center;
+    padding-left: 140px;
+    color: #e02c6d;
+}
+
+.service-details {
+    text-align: center;
+}
+
+
+/*--------- footer section style ---------*/
+
+footer {
+    background-color: black;
+    height: 180px;
+}
+
+.footer-details {
+    text-align: center;
+    margin: 0;
+}
+
+footer h3 {
+    padding: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.social-media {
+    padding: 15px;
+}
+
+.social-media i {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.font-color {
+    color: white;
+}
+
+
+/* --------media Queries--------- */
+
+
+/* ----------
+mobile devices -------*/
+
+@media only screen and (max-width:688px) {
+    /* -----------navbar ----------*/
+    header {
+        margin: 0;
+    }
+    .container,
+    .half-width {
+        width: 100%;
+    }
+    .header-title {
+        text-align: center;
+        width: 100%;
+    }
+    .menu-bar {
+        display: none;
+    }
+    /*------- influencer journey style-------- */
+    .influencer-journey {
+        display: flex;
+        flex-direction: column;
+    }
+    .influencer-details {
+        text-align: center;
+    }
+    .influencer-details h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .camera img {
+        margin-top: 25px;
+        width: 100%;
+    }
+    /*------ popular collections -------*/
+    .gallary {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /*------ exchange offers ---------*/
+    .exchange-offer p {
+        text-align: justify;
+        padding: 15px;
+    }
+    .service-produce {
+        display: flex;
+        flex-direction: column;
+    }
+    .services {
+        width: 100%;
+    }
+}
+
+
+/* tablet devices */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    /* ----------navbar--------- */
+    header {
+        margin: 0;
+    }
+    .container,
+    .half-width {
+        width: 100%;
+    }
+    .header-title {
+        text-align: center;
+        width: 100%;
+    }
+    .menu-bar {
+        display: none;
+    }
+    /*------- influencer journey style-------- */
+    .influencer-journey {
+        display: flex;
+        flex-direction: column;
+    }
+    .influencer-details {
+        text-align: center;
+    }
+    .influencer-details h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .camera img {
+        margin: 0 80px;
+        margin-top: 25px;
+        width: 80%;
+    }
+    /*------ popular collections -------*/
+    .gallary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*------ exchange offers ---------*/
+    .exchange-offer p {
+        padding: 15px;
+    }
+    .service-icon {
+        margin-right: 120px;
+    }
+    .service-produce {
+        display: flex;
+        flex-direction: column;
+    }
+    .services {
+        width: 100%;
+        text-align: center;
+    }
+}
